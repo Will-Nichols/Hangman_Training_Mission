@@ -1,0 +1,40 @@
+//Functions
+#include "LT\LTmenu.hpp"
+#include "hcam.hpp"
+
+overviewText = "NDSF Training v0.06";
+overviewPicture = "images\Training.jpg";
+onLoadName ="NDSF Training";
+author = "NDSF Team";
+disabledAI = 1;
+enableDebugConsole = 1;
+
+//RESPAWN SYSTEM
+respawn = "BASE";
+respawnOnStart = -1;
+respawnTemplatesWest[] = {"MenuPosition"};
+respawndelay = 5;
+
+
+class CfgFunctions
+{
+#include "LT\cfgfunctions.hpp"
+};
+
+class CfgSounds
+{
+	sounds[] = {};
+	class med_vid_1
+	{
+		name = "med_vid_1";
+		sound[] = { "SoundandVid\NDSF_Med.ogg", 10, 1, 100 };
+		titles[] = { 1, "*Medical Training*" };
+	};
+
+	class taps
+	{
+		name = "taps";
+		sound[] = { "sounds\taps.ogg", 10, 1, 100 };
+		titles[] = { 1, "*TAPS*" };
+	};
+};
