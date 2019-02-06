@@ -32,6 +32,9 @@ if (_this iskindof "RHS_AH64D_wd") then {
 	[[[_this], "Scripts\helos.sqf"], "BIS_fnc_execVM", true, true] call BIS_fnc_MP;
 
 					};
+if (_this iskindof "FIR_MH60M_Assault") then {
+	[[[_this], "Scripts\helos.sqf"], "BIS_fnc_execVM", true, true] call BIS_fnc_MP;
+					};					
 if (_this iskindof "rhsusf_CH53E_USMC_D") then {
 	[[[_this], "Scripts\helos.sqf"], "BIS_fnc_execVM", true, true] call BIS_fnc_MP;
 					};	

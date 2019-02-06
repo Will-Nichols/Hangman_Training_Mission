@@ -1,2 +1,2 @@
-# NDSF_Training
-Training Mission run by NDSF on Malden
+# Hangman_Training_Mission
+Hangman Platoon Training Mission run on Malden.

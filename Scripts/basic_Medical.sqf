@@ -8,11 +8,11 @@ if (isServer) then {
 
 
 	al_fnc_pat1 = {
-		{if ((typeOf _x == "Man_NDSF_52") && (!isPlayer _x)) then {deleteVehicle _x}} forEach allUnits;
+		{if ((typeOf _x == "B_Soldier_unarmed_F") && (!isPlayer _x)) then {deleteVehicle _x}} forEach allUnits;
 		deleteVehicle pat1;
 		sleep 1;
 		_group1=createGroup west;
-		'Man_NDSF_52' createUnit [[8111.87,9672.84,1.25], _group1,'pat1=this; dostop pat1'];
+		'B_Soldier_unarmed_F' createUnit [[8111.87,9672.84,1.25], _group1,'pat1=this; dostop pat1'];
 		pat1 attachTo [stretch1, [0, -.085, .2] ]; 
 		pat1 disableAI "ALL";
 		[pat1] call ace_medical_fnc_handleDamage_advancedSetDamage;
@@ -21,10 +21,10 @@ if (isServer) then {
 		};
 	
 		al_fnc_pat2 = {
-		{if ((typeOf _x == "Man_NDSF_51)") && (!isPlayer _x)) then {deleteVehicle _x}} forEach allUnits;
+		{if ((typeOf _x == "B_Soldier_unarmed_F") && (!isPlayer _x)) then {deleteVehicle _x}} forEach allUnits;
 		deleteVehicle pat2;
 		_group1=createGroup west;
-		'Man_NDSF_51' createUnit [[8111.87,9672.84,1.25], _group1,'pat2=this; dostop pat2'];
+		'B_Soldier_unarmed_F' createUnit [[8111.87,9672.84,1.25], _group1,'pat2=this; dostop pat2'];
 		pat2 attachTo [stretch2, [0, -.085, .2] ];
 		pat2 disableAI "ALL";
 		[pat2] call ace_medical_fnc_handleDamage_advancedSetDamage;
@@ -33,10 +33,10 @@ if (isServer) then {
 		};
 	
 		al_fnc_pat3 = {
-		{if ((typeOf _x == "Man_NDSF_50") && (!isPlayer _x)) then {deleteVehicle _x}} forEach allUnits;
+		{if ((typeOf _x == "B_Soldier_unarmed_F") && (!isPlayer _x)) then {deleteVehicle _x}} forEach allUnits;
 		deleteVehicle pat3;
 		_group1=createGroup west;
-		'Man_NDSF_50' createUnit [[8111.87,9672.84,1.25], _group1,'pat3=this; dostop pat3'];
+		'B_Soldier_unarmed_F' createUnit [[8111.87,9672.84,1.25], _group1,'pat3=this; dostop pat3'];
 		pat3 attachTo [stretch3, [0, -.085, .2] ];
 		[pat3] call ace_medical_fnc_handleDamage_advancedSetDamage;
 		[pat3, "HubWoundedProne_idle1"] remoteExec ["switchMove", 0];
@@ -45,40 +45,40 @@ if (isServer) then {
 	
 		al_fnc_triage = {
 	//patient 1
-		{if ((typeOf _x == "Man_NDSF_52") && (!isPlayer _x)) then {deleteVehicle _x}} forEach allUnits;
+		{if ((typeOf _x == "B_Soldier_unarmed_F") && (!isPlayer _x)) then {deleteVehicle _x}} forEach allUnits;
 		deleteVehicle pat1;
 		_group1=createGroup west;
-		'Man_NDSF_52' createUnit [[8111.87,9672.84,1.25], _group1,'pat1=this; dostop pat1'];
+		'B_Soldier_unarmed_F' createUnit [[8111.87,9672.84,1.25], _group1,'pat1=this; dostop pat1'];
 		pat1 attachTo [stretch1, [0, -.085, .2] ]; 
 		pat1 disableAI "ALL";
 		[pat1] call ace_medical_fnc_handleDamage_advancedSetDamage;
 		[pat1, "HubWoundedProne_idle1"] remoteExec ["switchMove", 0];
 		[pat1] call AL_injure_Patients;
 	//patient 2
-		{if ((typeOf _x == "Man_NDSF_51") && (!isPlayer _x)) then {deleteVehicle _x}} forEach allUnits;
+		{if ((typeOf _x == "B_Soldier_unarmed_F") && (!isPlayer _x)) then {deleteVehicle _x}} forEach allUnits;
 		deleteVehicle pat2;
 		_group1=createGroup west;
-		'Man_NDSF_51' createUnit [[8111.87,9672.84,1.25], _group1,'pat2=this; dostop pat2'];
+		'B_Soldier_unarmed_F' createUnit [[8111.87,9672.84,1.25], _group1,'pat2=this; dostop pat2'];
 		pat2 attachTo [stretch2, [0, -.085, .2] ]; 
 		pat2 disableAI "ALL";
 		[pat2] call ace_medical_fnc_handleDamage_advancedSetDamage;
 		[pat2, "HubWoundedProne_idle1"] remoteExec ["switchMove", 0];
 		[pat2] call AL_injure_Patients;
 	//patient 3
-		{if ((typeOf _x == "Man_NDSF_50") && (!isPlayer _x)) then {deleteVehicle _x}} forEach allUnits;
+		{if ((typeOf _x == "B_Soldier_unarmed_F") && (!isPlayer _x)) then {deleteVehicle _x}} forEach allUnits;
 		deleteVehicle pat3;
 		_group1=createGroup west;
-		'Man_NDSF_50' createUnit [[8111.87,9672.84,1.25], _group1,'pat3=this; dostop pat3'];
+		'B_Soldier_unarmed_F' createUnit [[8111.87,9672.84,1.25], _group1,'pat3=this; dostop pat3'];
 		pat3 attachTo [stretch3, [0, -.085, .2] ];
 		pat3 disableAI "ALL";		
 		[pat3] call ace_medical_fnc_handleDamage_advancedSetDamage;
 		[pat3, "HubWoundedProne_idle1"] remoteExec ["switchMove", 0];
 		[pat3] call AL_injure_Patients;
 	//patient 4
-		{if ((typeOf _x == "Man_NDSF_49") && (!isPlayer _x)) then {deleteVehicle _x}} forEach allUnits;
+		{if ((typeOf _x == "B_Soldier_unarmed_F") && (!isPlayer _x)) then {deleteVehicle _x}} forEach allUnits;
 		deleteVehicle pat4;
 		_group1=createGroup west;
-		'Man_NDSF_49' createUnit [[8111.87,9672.84,1.25], _group1,'pat4=this; dostop pat4'];
+		'B_Soldier_unarmed_F' createUnit [[8111.87,9672.84,1.25], _group1,'pat4=this; dostop pat4'];
 		pat4 attachTo [stretch4, [0, -.085, .2] ];
 		pat4 disableAI "ALL";
 		[pat4] call ace_medical_fnc_handleDamage_advancedSetDamage;
